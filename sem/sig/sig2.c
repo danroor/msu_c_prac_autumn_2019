@@ -4,7 +4,7 @@
 
 void alrm(int s)
 {
-    printf("Davai byree psina\n");
+    printf("Faster!\n");
     fflush(stdout);
     alarm(5);
 }
@@ -12,7 +12,7 @@ void alrm(int s)
 int main(void)
 {
     signal(SIGALRM, alrm);
-    printf("Vvedite chiselku: ");
+    printf("Enter a number: ");
     int x;
     alarm(5);
     for (;;) if (scanf("%d", &x) == 1) break;
